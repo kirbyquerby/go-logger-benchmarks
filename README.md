@@ -44,4 +44,4 @@ Below is a comparison of the results for each logger, obtained using benchstat. 
 
 ## Comments
 
-From these results, telemetry logging's runtime outperforms std logging and sugared zap significantly and performs similarly to zerolog. However, telemetry logging has a noticeably higher amount of allocations and bytes allocated.
+From these results, telemetry logging's runtime outperforms every other logger except for zerolog which has similar performance. However, telemetry logging has a noticeably higher amount of allocations and bytes allocated than most of the competitors.
